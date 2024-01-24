@@ -1,5 +1,3 @@
-import 'package:ali_auth_plugin/ali_auth_plugin_method_channel.dart';
-
 import '../ali_auth_plugin_platform_interface.dart';
 import 'ali_auth_ui_config.dart';
 
