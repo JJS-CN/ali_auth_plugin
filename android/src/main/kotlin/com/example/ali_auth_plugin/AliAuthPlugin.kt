@@ -55,9 +55,6 @@ class AliAuthPlugin : FlutterPlugin, MethodCallHandler {
                 })
                 .checkEnvAvailable(PhoneNumberAuthHelper.SERVICE_TYPE_LOGIN);
         } else if (call.method == "getLoginToken") {
-            PhoneNumberAuthHelper
-                .getInstance(context, null)
-                .quitLoginPage()
             //获取登录Token, 唤起一键登陆页
             val authHelper = PhoneNumberAuthHelper
                 .getInstance(context, object : TokenResultListener {
@@ -65,10 +62,18 @@ class AliAuthPlugin : FlutterPlugin, MethodCallHandler {
                         val jsonObject = JSONObject(p0);
                         val token = jsonObject.get("token")
                         result.success(token)
+                        //不管成功失败,直接关闭
+                        PhoneNumberAuthHelper
+                            .getInstance(context, null)
+                            .quitLoginPage()
                     }
 
                     override fun onTokenFailed(p0: String?) {
                         result.error("", "onTokenFailed", p0)
+                        //不管成功失败,直接关闭
+                        PhoneNumberAuthHelper
+                            .getInstance(context, null)
+                            .quitLoginPage()
                     }
                 })
             //点击范围扩大

@@ -18,3 +18,5 @@ samples, guidance on mobile development, and a full API reference.
 
 修改对应版本号,并打tag标签
 执行flutter packages pub publish --server=https:\/\/pub.dartlang.org
+
+* FIX: 上传后无法立即使用,需要等待pub.dev分析包,输出文档之后再过2分钟才能pub get得到,否则会出现由于找不到版本数据而报错

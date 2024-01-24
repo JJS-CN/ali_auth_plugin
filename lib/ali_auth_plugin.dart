@@ -22,4 +22,8 @@ class AliAuthPlugin {
   Future<String?> getLoginToken({AuthUiConfig? uiConfig}) {
     return AliAuthPluginPlatform.instance.getLoginToken(uiConfig: uiConfig);
   }
+
+  Future<bool> quitLoginPage() {
+    return AliAuthPluginPlatform.instance.quitLoginPage();
+  }
 }

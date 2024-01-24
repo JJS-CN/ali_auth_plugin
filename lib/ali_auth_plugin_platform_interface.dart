@@ -43,4 +43,8 @@ abstract class AliAuthPluginPlatform extends PlatformInterface {
   Future<String?> getLoginToken({AuthUiConfig? uiConfig}) {
     throw UnimplementedError('getLoginToken() has not been implemented.');
   }
+
+  Future<bool> quitLoginPage() {
+    throw UnimplementedError('quitLoginPage() has not been implemented.');
+  }
 }

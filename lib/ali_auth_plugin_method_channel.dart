@@ -47,4 +47,11 @@ class MethodChannelAliAuthPlugin extends AliAuthPluginPlatform {
         'getLoginToken', jsonEncode(uiConfig?.toJson()));
     return getLoginToken;
   }
+
+  @override
+  Future<bool> quitLoginPage() async {
+    final quitLoginPage =
+        await methodChannel.invokeMethod<bool>('quitLoginPage');
+    return quitLoginPage ?? false;
+  }
 }
