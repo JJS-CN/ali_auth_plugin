@@ -13,3 +13,8 @@ For help getting started with Flutter development, view the
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
+
+## 发布pub
+
+修改对应版本号,并打tag标签
+执行flutter packages pub publish  
