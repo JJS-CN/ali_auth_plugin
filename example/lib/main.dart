@@ -91,9 +91,7 @@ class _MyAppState extends State<MyApp> {
               MaterialButton(
                 onPressed: () {
                   AliAuthPluginPlatform.instance
-                      .setAuthSDKInfo(
-                          "bj0bdt+aVn02LMQJieWJdN41x5M+Zjl9+AVjaKwXk/mYB8/8vau1sNkSvyxQJSPnnTc7Q5Jiyg6OAScOGRS2MklfTrzmg5qKyiF9PlIZzNR7LwaZsNFgzf9kae3oeG4Z59bLoVXJg4Dxg4jNMl/OOvkhYfhlFJBYTVYociXNAht6kJSkWA0qLFlTiZaLp4LFSvAmj0fti2eXaCbZNCiyJpJfAfmZFrH2aUDfvImlFPIqm18dG5jWXEUf84+KZD5CDgyaYTJsYmbnnV5S4klnMF7dnYRvQ9jfAsqY1FCMs7k=",
-                          "ioskey")
+                      .setAuthSDKInfo("androidkey", "ioskey")
                       .then((value) {});
                 },
                 child: Text("设置appSecret"),
