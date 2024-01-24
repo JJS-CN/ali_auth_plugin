@@ -17,4 +17,4 @@ samples, guidance on mobile development, and a full API reference.
 ## 发布pub
 
 修改对应版本号,并打tag标签
-执行flutter packages pub publish  
+执行flutter packages pub publish --server=https:\/\/pub.dartlang.org
