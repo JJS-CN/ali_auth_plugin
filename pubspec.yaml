@@ -1,6 +1,6 @@
 name: ali_auth_plugin
 description: "A Flutter plugin : ali_auth 2.13.2.1"
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/JJS-CN/ali_auth_plugin
 repository: https://github.com/JJS-CN/ali_auth_plugin
 
@@ -14,7 +14,6 @@ dependencies:
   flutter_web_plugins:
     sdk: flutter
   plugin_platform_interface: ^2.1.5
-  js: ^0.6.5
 
 dev_dependencies:
   flutter_test:
